@@ -42,6 +42,49 @@ Antes de começar, certifique-se de ter uma conta na AWS. Se precisar de ajuda p
 -   Exporte os resultados e analise as previsões geradas.
 -   Documente suas conclusões e qualquer insight obtido a partir das previsões.
 
+### 5. Conclusao do Desafio
+Com base no passo a passo, e treinamento do modelo Machine Learning no Amazon Sagemaker Canvas obtive as seguintes Métricas.
+
+<img width="614" height="226" alt="metricas" src="https://github.com/user-attachments/assets/974ddeec-1497-4190-a353-997740b1db40" />
+
+
+
+📊 RMSE (Root Mean Squared Error) — 0.004
+
+Mede o erro médio das previsões, penalizando mais os erros grandes.
+
+Está na mesma unidade do valor previsto (no seu caso, do ID_PRODUTO).
+
+Quanto menor, melhor.
+
+👉 Interpretação do seu valor: O modelo costuma errar em média cerca de ±0,004 em relação ao valor real. Ou seja, as previsões estão muito próximas do valor correto.
+
+📊 MSE (Mean Squared Error) — 0.000
+
+É o quadrado do erro médio.
+
+Usado internamente para otimização do modelo.
+
+Valores muito pequenos indicam alto nível de precisão.
+
+👉 Interpretação do seu valor: O erro médio ao quadrado é praticamente zero, o que reforça que o modelo está com erro extremamente baixo.
+
+🧠 Optimization Metric
+
+Indica qual métrica o modelo usou para se ajustar durante o treinamento.
+
+No seu caso, foi o MSE.
+
+O algoritmo tentou minimizar essa métrica ao máximo.
+
+📌 Frase explicativa da tela
+
+“The model often predicts a value that is within +/- 0.004 of the actual value for ID_PRODUTO”
+
+👉 Em português:
+
+O modelo geralmente prevê um valor que fica dentro de ±0,004 do valor real do ID_PRODUTO.   
+
 ## 🤔 Dúvidas?
 
 Esperamos que esta experiência tenha sido enriquecedora e que você tenha aprendido mais sobre Machine Learning aplicado a problemas reais. Se tiver alguma dúvida, não hesite em abrir uma issue neste repositório ou entrar em contato com a equipe da DIO.
